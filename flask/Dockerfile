@@ -1,0 +1,5 @@
+From python:3.10
+WORKDIR /usr/src/app
+RUN pip install flask==2.1.1
+RUN pip install "Werkzeug<3.0.0"
+CMD ["flask", "run", "--host=0.0.0.0"]
